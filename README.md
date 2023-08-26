@@ -5,7 +5,7 @@ The template has been adapted to use flask backend framework.
 # Installation
 
 ```
-git clone  https://github.com/niyonx/flask-startbootstrap-sb-admin-2.git
+git clone --single-branch --branch dava https://github.com/archidaeli/techcamp-group2.git
 cd flask-startbootstrap-sb-admin2
 python sbadmin2.py
 ```
