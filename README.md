@@ -5,9 +5,16 @@ The template has been adapted to use flask backend framework.
 # Installation
 
 ```
-git clone --single-branch --branch [your_branch] https://github.com/archidaeli/techcamp-group2.git
+git clone https://github.com/archidaeli/techcamp-group2.git
 cd flask-startbootstrap-sb-admin2
 python sbadmin2.py
+```
+# Push command
+```
+git status
+git checkout [your_branch] or git checkout -b [your_branch] (for first time push)
+git commit -m "your commit message"
+git push origin [your_branch]
 ```
 
 # [Start Bootstrap - SB Admin 2](https://startbootstrap.com/themes/sb-admin-2/)
