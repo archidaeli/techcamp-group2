@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 from flask import Flask, render_template, request, redirect, url_for, session
 from werkzeug.security import generate_password_hash, check_password_hash
-import requests
 # from pymongo import MongoClient
 import jinja2.exceptions
 
@@ -44,19 +43,6 @@ def login():
             return redirect(url_for('dashboard'))
         return 'Invalid username or password'
     return render_template('login.html')
-
-@app.route('/upload/data', methods=['GET', 'POST'])
-def upload():
-    if request.method == 'POST':
-        data = {
-            'index': 4,  # Your integer value
-            'url': 'https://images.remotehub.com/d42c62669a7711eb91397e038280fee0/original_thumb/ec1eb042.jpg'
-        }
-
-        response = requests.post('https://9664-2001-448a-2012-1fe7-e65c-2fdd-d673-5693.ngrok-free.app/', json=data)
-        print(response.data)
-
-    return render_template('trashbin.html'), 200
 
 
 
