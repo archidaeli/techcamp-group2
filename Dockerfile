@@ -9,6 +9,6 @@ RUN pip3 install -r requirements.txt
 
 COPY . .
 EXPOSE 5000
-ENV FLASK_APP=my_flask.py
+ENV FLASK_APP=sbadmin2.py
 
 CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
